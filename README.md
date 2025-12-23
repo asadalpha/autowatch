@@ -1,8 +1,8 @@
-# 🦅 AutoWatch: Automated System Monitoring & Remediation
+#  AutoWatch: Automated System Monitoring & Remediation
 
 AutoWatch is a lightweight, self-healing infrastructure monitoring tool designed for SREs and System Administrators. It monitors system resources (CPU, Memory, Disk) and critical services, automatically attempting remediation and logging alerts when thresholds are breached.
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 autowatch/
@@ -23,7 +23,7 @@ autowatch/
 └── setup.sh             # One-click installation script
 ```
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 1.  **Initialize the Environment**
     Run the setup script to create necessary directories and set permissions.
@@ -58,8 +58,9 @@ autowatch/
     ```bash
     crontab cron/autowatch.cron
     ```
+## If ON Windows use wsl(Windows Subsystem for Linux)
 
-## ⚙️ How It Works
+##  How It Works
 
 1.  **Monitor**: `monitor.sh` gathers current system stats.
 2.  **Evaluate**: Uses `bc` for precise floating-point comparison against config.
